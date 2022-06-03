@@ -13,9 +13,11 @@ if not (os.path.exists(db)):
 
 # Classname generator function
 
-
 def class_generator(size=4, chars=string.ascii_lowercase):
-    return ''.join(random.choice(chars) for _ in range(size))
+    prefix = "ds-"
+    randomString =  ''.join(random.choice(chars) for _ in range(size))
+
+    return prefix + randomString
 
 
 # Generate classname
